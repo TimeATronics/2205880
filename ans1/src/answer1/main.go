@@ -31,7 +31,7 @@ var (
 		"r": "http://20.244.56.144/evaluation-service/rand",
 	}
 	windows = make(map[string]*SlidingWindow)
-	token   = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiZXhwIjoxNzQzNTk5NDkyLCJpYXQiOjE3NDM1OTkxOTIsImlzcyI6IkFmZm9yZG1lZCIsImp0aSI6ImQ5YmY0Mjg0LWM5OGYtNDc1Zi1hMmE4LTM1NDhmZWNiOGM4NiIsInN1YiI6ImFyYWRoeWEuY2hha3JhYmFydGlAZ21haWwuY29tIn0sImVtYWlsIjoiYXJhZGh5YS5jaGFrcmFiYXJ0aUBnbWFpbC5jb20iLCJuYW1lIjoiYXJhZGh5YSBjaGFrcmFiYXJ0aSIsInJvbGxObyI6IjIyMDU4ODAiLCJhY2Nlc3NDb2RlIjoibndwd3JaIiwiY2xpZW50SUQiOiJkOWJmNDI4NC1jOThmLTQ3NWYtYTJhOC0zNTQ4ZmVjYjhjODYiLCJjbGllbnRTZWNyZXQiOiJabW1GVnJzZkFSRmRYRFNuIn0.rWOzNdLLfkba_rdmamFkh8jAzDX2bNwNl5kDfc3CkGk"
+	token   = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiZXhwIjoxNzQzNjAzNTg2LCJpYXQiOjE3NDM2MDMyODYsImlzcyI6IkFmZm9yZG1lZCIsImp0aSI6ImQ5YmY0Mjg0LWM5OGYtNDc1Zi1hMmE4LTM1NDhmZWNiOGM4NiIsInN1YiI6ImFyYWRoeWEuY2hha3JhYmFydGlAZ21haWwuY29tIn0sImVtYWlsIjoiYXJhZGh5YS5jaGFrcmFiYXJ0aUBnbWFpbC5jb20iLCJuYW1lIjoiYXJhZGh5YSBjaGFrcmFiYXJ0aSIsInJvbGxObyI6IjIyMDU4ODAiLCJhY2Nlc3NDb2RlIjoibndwd3JaIiwiY2xpZW50SUQiOiJkOWJmNDI4NC1jOThmLTQ3NWYtYTJhOC0zNTQ4ZmVjYjhjODYiLCJjbGllbnRTZWNyZXQiOiJabW1GVnJzZkFSRmRYRFNuIn0.jSW0Y86szI52C4YEGHF1q1d3rrbZqRGYpv9q6nsKa0Y"
 )
 
 // Function to fetch numbers from the external API
@@ -52,6 +52,7 @@ amFkh8jAzDX2bNwNl5kDfc3CkGk"
 // So, the result is always going to show null
 
 // For the purpose of testing, I have 2 test cases of my own.
+// Update: Regenerating Auth token works.
 func fetchNumbers(numberType string) ([]int, error) {
 	url, exists := numberAPIs[numberType]
 	if !exists {
