@@ -135,8 +135,31 @@ func max(a, b int) int {
 	return b
 }
 
+func testNumbers() {
+	testCases := map[string][]int{
+		"p": {2, 3, 5, 7, 11},    // Prime numbers
+		"f": {0, 1, 1, 2, 3, 5},  // Fibonacci numbers
+		"e": {2, 4, 6, 8, 10},    // Even numbers
+		"r": {7, 14, 21, 28, 35}, // Random numbers (mocked)
+	}
+
+	for key, numbers := range testCases {
+		win := &SlidingWindow{size: 10}
+		win.Add(numbers)
+		response := map[string]interface{}{
+			"numbers":         numbers,
+			"windowPrevState": []int{}, // No previous state in test
+			"windowCurrState": win.data,
+			"avg":             win.Average(),
+		}
+		jsonResponse, _ := json.MarshalIndent(response, "", "  ")
+		fmt.Printf("Test case %s:%s", key, jsonResponse)
+	}
+}
+
 // Main function to start the HTTP server
 func main() {
+	go testNumbers()
 	http.HandleFunc("/numbers/", numberHandler)
 	fmt.Println("Server running on :9876")
 	log.Fatal(http.ListenAndServe(":9876", nil))
