@@ -8,8 +8,6 @@ import (
 	"sync"
 )
 
-// Author: Aradhya Chakrabarti
-// Roll No: 2205880
 // Description: This program fetches numbers from external APIs and maintains a sliding window to compute the moving average.
 
 // APIResponse struct to store the response from the external number API
@@ -40,8 +38,7 @@ var (
 // Note that GET requests are not returning values:
 /*
 Sample curl command:
-curl -X GET "http://20.244.56.144/evalua
-tion-service/primes" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXV
+curl -X GET "http://20.244.56.144/evaluation-service/primes" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXV
 CJ9.eyJNYXBDbGFpbXMiOnsiZXhwIjoxNzQzNTk5NDkyLCJpYXQiOjE3NDM1OTkxOTIsImlzcyI6IkFm
 Zm9yZG1lZCIsImp0aSI6ImQ5YmY0Mjg0LWM5OGYtNDc1Zi1hMmE4LTM1NDhmZWNiOGM4NiIsInN1YiI6
 ImFyYWRoeWEuY2hha3JhYmFydGlAZ21haWwuY29tIn0sImVtYWlsIjoiYXJhZGh5YS5jaGFrcmFiYXJ0

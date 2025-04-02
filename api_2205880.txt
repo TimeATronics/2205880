@@ -1,13 +1,1 @@
-{"email":"aradhya.chakrabarti@gmail.com","name":"aradhya chakrabarti","rollNo":"2205880","accessCode":"nwpwrZ","clientID":"d9bf4284-c98f-475f-a2a8-3548fecb8c86","clientSecret":"ZmmFVrsfARFdXDSn"}
-
-
-
-
-curl -X POST http://20.244.56.144/evaluation-service/auth ^
-     -H "Content-Type: application/json" ^
-     -d "{ \"email\": \"aradhya.chakrabarti@gmail.com\", \"name\": \"Aradhya Chakrabarti\", \"rollNo\": \"2205880\", \"accessCode\": \"nwpwrZ\", \"clientID\": \"d9bf4284-c98f-475f-a2a8-3548fecb8c86\", \"clientSecret\": \"ZmmFVrsfARFdXDSn\" }"
-
-
-
-
 {"token_type":"Bearer","access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiZXhwIjoxNzQzNTk5NDkyLCJpYXQiOjE3NDM1OTkxOTIsImlzcyI6IkFmZm9yZG1lZCIsImp0aSI6ImQ5YmY0Mjg0LWM5OGYtNDc1Zi1hMmE4LTM1NDhmZWNiOGM4NiIsInN1YiI6ImFyYWRoeWEuY2hha3JhYmFydGlAZ21haWwuY29tIn0sImVtYWlsIjoiYXJhZGh5YS5jaGFrcmFiYXJ0aUBnbWFpbC5jb20iLCJuYW1lIjoiYXJhZGh5YSBjaGFrcmFiYXJ0aSIsInJvbGxObyI6IjIyMDU4ODAiLCJhY2Nlc3NDb2RlIjoibndwd3JaIiwiY2xpZW50SUQiOiJkOWJmNDI4NC1jOThmLTQ3NWYtYTJhOC0zNTQ4ZmVjYjhjODYiLCJjbGllbnRTZWNyZXQiOiJabW1GVnJzZkFSRmRYRFNuIn0.rWOzNdLLfkba_rdmamFkh8jAzDX2bNwNl5kDfc3CkGk","expires_in":1743599492}
